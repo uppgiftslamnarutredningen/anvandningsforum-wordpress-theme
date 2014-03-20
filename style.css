@@ -1,0 +1,304 @@
+/*
+Theme Name:     Aforum Wordpresstema
+Theme URI:      http://example.com/
+Description:    Användningsforums wordpresstema. 
+Author:         Anvandningsforum
+Author URI:     http://www.anvandningsforum.se
+Template:       twentyeleven
+Version:        0.1.0
+*/
+
+@import url("../twentyeleven/style.css");
+
+body, input, textarea {
+	color: #000;
+	font: 15px "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	line-height: 1.625;
+}
+
+a {
+	text-decoration: underline;
+}
+a:focus,
+a:active,
+a:hover {
+	background-color: #ff6 !important;
+	color: #000 !important;
+	text-decoration: none;
+	
+}
+#branding {
+border-top: 2px solid #bbb;
+padding-bottom: 10px;
+padding-top: 20px;
+position: relative;
+z-index: 9999;
+}
+#branding div.hgroup {
+	padding: 20px 20px 0 20px;
+}
+#branding div.hgroup img{
+	float: left;
+	width:100px;
+	height: 100px;
+	margin-top: -15px;
+}
+#branding #s {
+	-webkit-transition-duration: 0;
+	-webkit-transition-property: none;
+	-moz-transition-duration: 0;
+	-moz-transition-property: none;
+	-o-transition-duration: 0;
+	-o-transition-property: none;
+	width: 90px;
+	clear:both;
+}
+
+#branding #s:focus {
+	background-color: #ff6;
+	width: 90px;
+}
+
+#site-title {
+	margin: 0;
+	padding: 0 0 0 0;
+}
+
+#site-title a {
+	font-family: Georgia, serif;
+	font-size: 40px;
+	font-weight: normal;
+	line-height: 36px;
+	text-decoration: none;
+}
+#site-title a:hover,
+#site-title a:focus,
+#site-title a:active {
+	color: #1982d1 !important;
+	background-color: transparent !important;
+}
+#site-description {
+	color: #000;
+	font-size: 14px;
+	margin: 0 10px 3.65625em 0;
+}
+
+
+input[type=text],
+input[type=password],
+textarea {
+	background: #fafafa;
+	border: 1px solid #111;
+	color: #000;
+}
+input[type=text]:focus,
+textarea:focus {
+	background: #fffc75;
+}
+
+
+.singular.page .hentry {
+	padding: 0;
+}
+
+.singular .entry-title, .page-title {
+	font-size: 26px;
+	line-height: 34px;
+}
+
+h2.entry-title {
+	font-size: 22px;
+	line-height: 30px;
+}
+h2.entry-title a {
+	text-decoration: underline;
+}
+
+ul.menu li a {
+	font-size:15px;
+}
+.menu li a:focus {
+	background-color: #eee;
+	color: 000;
+}
+
+.widget-title {
+	color: #000;
+	font-size: 15px;
+	font-weight: normal;
+	text-transform: none;
+}
+
+#access .current-menu-item > a {
+	font-weight:normal;
+	color: #000;
+	background-color: #ff6;
+}
+
+
+.page-title {
+	color: #000;
+	font-weight: bold;
+	letter-spacing: 0;
+	margin: 0 0 1em 0;
+	text-transform: none;
+}
+
+
+footer p {
+	font-size: 15px;
+}
+
+#respond .comment-form-author .required,
+#respond .comment-form-email .required {
+	color: #bd3500;
+	font-size: 22px;
+	font-weight: bold;
+	position: static;
+}
+
+#respond input[type="text"],
+#respond textarea {
+	background: #fff;
+	border: inherit;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	position: static;
+	padding: 4px 6px;
+	text-indent: 0;
+}
+
+
+#respond .comment-form-author label,
+#respond .comment-form-email label,
+#respond .comment-form-url label,
+#respond .comment-form-comment label {
+	background: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	color: #000;
+	display: block;
+	font-size: inherit;
+	font-weight:bold;
+	left: 0;
+	min-width: 60px;
+	padding: 0;
+	position: static;
+}
+
+
+div.logos a {
+	display:block;
+	float:right;
+	margin-left: 20px;
+}
+
+.textwidget a{
+	text-decoration: underline;
+	}
+.textwidget a:hover, .textwidget a:focus{
+	text-decoration: none;
+	}
+.logos a:hover, .logos a:focus {
+	background-color: transparent !important;
+	}
+@media (max-width: 650px) {
+
+	#site-title a {
+		font-size: 30px;
+		line-height: 36px;
+		text-decoration: none;
+	}
+
+	#site-description {
+		color: #000;
+		font-size: 14px;
+		margin: 0 0 1em 0;
+	}
+
+	input#s {
+		width:100%;
+	}
+ 
+}
+
+@media (max-width: 480px) {
+	li.menu-item {
+		width: 100%;
+		clear:both;
+	}
+
+	.entry-title,
+	.entry-header .entry-meta {
+		padding-right: 0;
+	}
+
+	#branding hgroup {
+		background-image: none;
+		padding-left: 0;
+	}
+
+	#branding #s {
+		width: 100%;
+		margin: 0 20px 20px 0;
+		clear:both;
+	}
+
+	#branding #s:focus {
+		background-color: #ff6;
+		width: 100%;
+	}
+
+	#branding #searchform {
+		position:absolute;
+		top: 3.8em;
+		left: auto;
+		text-align: center;
+	}
+
+	#site-title {
+		margin-right: auto;
+		padding: 4.1em 0 0;
+		text-align:center;
+	}
+
+	#site-description {
+		text-align:center;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { 
+
+	#site-title a {
+		font-size: 30px;
+		line-height: 36px;
+		text-decoration: none;
+	}
+	
+ 
+}
+@media only screen and (max-width:767px) {
+	#branding #searchform {
+		/*position: relative;
+		top: 0px;
+		margin: 0 auto 0px auto;
+		padding: 0;
+		width: 80%;
+		display: block;*/}
+
+	#branding #searchform #s {
+		/*width: 70%;*/}	
+
+ 
+}
+ 
+@media only screen and (max-width:480px) {
+	
+	#site-title a img { 
+		display: none; } 
+}
