@@ -1,4 +1,7 @@
 anvandningsforum-wordpress-theme
 ================================
 
-Wordpresstema, ursprungligen utvecklat för www.anvandningsforum.se. Utvecklat enligt tillgänglighetsriktlinjer.
+Ett Wordpresstema som ursprungligen skapats för
+anvandningsforum.se. Temat är utformat för följa
+tillgänglighetsriktlinjer.
+
